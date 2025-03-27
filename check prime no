@@ -1,0 +1,20 @@
+import java.util.*;
+public class main{
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        double num = scan.nextDouble();
+        boolean isprime = true;
+        for(int i=2;i<=num/2;i++){
+            if(num%i==0){
+                isprime=false;
+                break;
+            }
+        }
+        if(isprime!=false){
+            System.out.println("prime no.");
+        }
+        else{
+            System.out.println("not a prime no");
+        }
+    }
+}
