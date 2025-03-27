@@ -1,0 +1,36 @@
+import java.util.*;
+public class main{
+    public static void main(String args[]){
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter a digit : ");
+        double a = scan.nextDouble();
+        if(a%2==0){
+            System.out.println("EVEN");
+        }
+        else{
+            System.out.println("ODD");
+        }
+    }
+}
+
+//function method
+
+class evenorodd{
+    void check(double a){
+        if(a%2==0){
+            System.out.println("even");
+        }
+        else{
+            System.out.println("odd");
+        }
+    }
+}
+public class main{
+    public static void main(String args[]){
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter a digit : ");
+        double a = scan.nextDouble();
+        evenorodd obj = new evenorodd();
+        obj.check(a);
+    }
+}
